@@ -1,0 +1,13 @@
+<?php
+
+//definir os tipos das variáveis ajuda a reduzir/encontrar mais facilmente os erros.
+function criarConta(string $cpf, string $nomeTitular, float $saldo): array
+{
+    //array associativo, onde o cpf é a chave, que recebe 'titular' e 'saldo' como itens.
+    return [
+        $cpf => [
+            'titular' => $nomeTitular,
+            'saldo' => $saldo,
+        ]
+    ];
+}
